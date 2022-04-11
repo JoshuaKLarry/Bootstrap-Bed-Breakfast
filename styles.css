@@ -1,0 +1,50 @@
+html {
+    font-family: 'Anek Tamil', sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+
+.card-body {
+    color:black;
+    text-shadow: 1px 1px 3px rgb(95, 95, 95);
+}
+
+body {
+    background-image: url(innBackground.jpg);
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+.contactPage {
+    display:grid;
+    grid-template-areas: 
+    "contactLeft contactRight";
+}
+
+#contactLeft {
+    display:grid;
+    grid-area: contactLeft;
+}
+
+#contactRight {
+    display:grid;
+    grid-area: contactRight;
+}
+
+/* This styling is supposed to make the map on the contact page responsive.*/
+.responsiveMap {
+    position:relative;
+    height:0;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    overflow:hidden;
+}
+
+.responsiveMap iframe,
+.responsiveMap object,
+.responsiveMap embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
